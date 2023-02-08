@@ -1,0 +1,13 @@
+
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+         color: blueviolet;
+}
+      picture{
+        align-items: stretch;
+    }
