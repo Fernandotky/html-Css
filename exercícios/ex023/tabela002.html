@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 0.8em;
+            
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){ /*2n-1*/
+            background-color: rgb(230, 173, 222);
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: lightblue;
+        }
+
+        thead, tfoot{
+            background-color: rgb(71, 70, 70);
+            color: white;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(71, 70, 70);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas grandes
+        <!-- 
+            ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
+        <table>
+            <caption>População das unidades federativas </caption>
+            <thead>
+                <tr>
+                    <th scope="co">Estado</th>
+                    <th scope="co" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>São paulo</td>
+                    <td class="num">46 024 937</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">15 989 929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">10 444 526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 693 929</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">8 796 448</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 452 381</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">7 581 051</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">6 248 436</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>131.855.944</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit fugit aperiam deserunt quaerat? Saepe, libero blanditiis? Voluptatem, quidem. Id ipsa tempore possimus modi quisquam! Dolores quisquam itaque nisi quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nobis debitis voluptatum amet hic recusandae omnis eaque, odio deleniti aperiam officia voluptatibus sapiente consequatur soluta et, pariatur minima quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas ipsam officiis! Doloribus accusamus beatae error quia natus quis minima modi deserunt dicta tempora voluptatibus exercitationem, doloremque, aut, ducimus fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae placeat cum numquam, quis magni praesentium, enim provident ut nobis facere nisi voluptatibus. Ex modi repellendus nesciunt odit. Nulla, illum non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit fugit aperiam deserunt quaerat? Saepe, libero blanditiis? Voluptatem, quidem. Id ipsa tempore possimus modi quisquam! Dolores quisquam itaque nisi quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nobis debitis voluptatum amet hic recusandae omnis eaque, odio deleniti aperiam officia voluptatibus sapiente consequatur soluta et, pariatur minima quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas ipsam officiis! Doloribus accusamus beatae error quia natus quis minima modi deserunt dicta tempora voluptatibus exercitationem, doloremque, aut, ducimus fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae placeat cum numquam, quis magni praesentium, enim provident ut nobis facere nisi voluptatibus. Ex modi repellendus nesciunt odit. Nulla, illum non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit fugit aperiam deserunt quaerat? Saepe, libero blanditiis? Voluptatem, quidem. Id ipsa tempore possimus modi quisquam! Dolores quisquam itaque nisi quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nobis debitis voluptatum amet hic recusandae omnis eaque, odio deleniti aperiam officia voluptatibus sapiente consequatur soluta et, pariatur minima quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas ipsam officiis! Doloribus accusamus beatae error quia natus quis minima modi deserunt dicta tempora voluptatibus exercitationem, doloremque, aut, ducimus fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae placeat cum numquam, quis magni praesentium, enim provident ut nobis facere nisi voluptatibus. Ex modi repellendus nesciunt odit. Nulla, illum non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit fugit aperiam deserunt quaerat? Saepe, libero blanditiis? Voluptatem, quidem. Id ipsa tempore possimus modi quisquam! Dolores quisquam itaque nisi quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nobis debitis voluptatum amet hic recusandae omnis eaque, odio deleniti aperiam officia voluptatibus sapiente consequatur soluta et, pariatur minima quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas ipsam officiis! Doloribus accusamus beatae error quia natus quis minima modi deserunt dicta tempora voluptatibus exercitationem, doloremque, aut, ducimus fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae placeat cum numquam, quis magni praesentium, enim provident ut nobis facere nisi voluptatibus. Ex modi repellendus nesciunt odit. Nulla, illum non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit fugit aperiam deserunt quaerat? Saepe, libero blanditiis? Voluptatem, quidem. Id ipsa tempore possimus modi quisquam! Dolores quisquam itaque nisi quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt nobis debitis voluptatum amet hic recusandae omnis eaque, odio deleniti aperiam officia voluptatibus sapiente consequatur soluta et, pariatur minima quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas ipsam officiis! Doloribus accusamus beatae error quia natus quis minima modi deserunt dicta tempora voluptatibus exercitationem, doloremque, aut, ducimus fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae placeat cum numquam, quis magni praesentium, enim provident ut nobis facere nisi voluptatibus. Ex modi repellendus nesciunt odit. Nulla, illum non.</p>
+        
+    </h1>
+</body>
+</html>
