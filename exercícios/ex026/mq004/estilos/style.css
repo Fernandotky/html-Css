@@ -18,6 +18,8 @@ html {
    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
+    
 }
 
 main{
@@ -48,4 +50,3 @@ img#print {display: none; }
 img#pc {display: none; }
 img#tv {display: none; }
 
-bg
